@@ -5,7 +5,7 @@ require('dotenv').config()
 console.log(process.env.clientID)
 
 passport.use(new GoogleStrategy({
-    clientID  :  process.env.clientID ,
+    clientID  :  process.env.clientId ,
     clientSecret : process.env.clientSecret,
     callbackURL : process.env.callbackURL
 }, async(accessToken, refreshToken,profile,done)=>{
